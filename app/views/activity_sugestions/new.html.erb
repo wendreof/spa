@@ -1,0 +1,7 @@
+<%- model_class = ActivitySugestion -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'Nova %{model}'], :model => 'Sugestão de Atividade' %></h1>
+</div>
+<h5> Sugira uma atividade própria.</h5>
+<br>
+<%= render :partial => 'form' %>

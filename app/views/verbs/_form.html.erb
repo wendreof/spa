@@ -1,0 +1,47 @@
+<div class="card-panel">
+
+  <%= form_for @verb, :html => { :class => "form-horizontal verb" } do |f| %>
+
+    <% if @verb.errors.any? %>
+      <div class="col-lg-offset-2 col-lg-10">
+        <div id="error_expl" class="panel panel-danger" style="margin-bottom: 50px">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= pluralize(@verb.errors.count, "erro") %> impedem o verbo de ser salvo:</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+            <% @verb.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select :category_id, Category.all, :id, :desctipion, {:prompt => 'Selecione um Domínio Cognitivo', :selected => @verb.category_id} %>
+        <%= f.label :category_id %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :description %>
+        <%= f.text_field :description%>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <%= f.submit nil, :class => 'waves-effect waves-light btn cyan' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                verbs_path, :class => 'waves-effect waves-light btn' %>
+    </div>
+
+  <% end %>
+
+</div>

@@ -1,0 +1,44 @@
+<%= render "shared/loader" %>
+
+<%- model_class = Resource -%>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h5 class="breadcrumbs-title">Recursos</h5>
+    <ol class="breadcrumbs">
+        <li>Cadastros</li>
+        <li class="active">Recursos</li>
+    </ol>
+  </div>
+</div>
+<br>
+<div class="card-panel">
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width: 5%">ID</th>
+        <th style="width: 65%">Descrição</th>
+        <th style="width: 15%">Criado em</th>
+        <th style="width: 15%; text-align: center">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @resources.each do |resource| %>
+        <tr>
+          <td><%= link_to resource.id, resource_path(resource) %></td>
+          <td><%= resource.description %></td>
+          <td><%=l resource.created_at, format: :short %></td>
+          <td style="text-align: center">
+            <%=link_to "<i class='material-icons'>delete</i>".html_safe, resource_path(resource), method: :delete, class: "waves-effect waves-circle btn-floating secondary-content" %>
+            <%=link_to "<i class='material-icons'>edit</i>".html_safe, edit_resource_path(resource), class: "waves-effect waves-circle btn-floating secondary-content cyan" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_resource_path,
+              :class => 'waves-effect waves-light btn' %>
+
+</div>

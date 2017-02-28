@@ -1,0 +1,48 @@
+<%= render "shared/loader" %>
+
+<%- model_class = Teacher -%>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h5 class="breadcrumbs-title">Professores</h5>
+    <ol class="breadcrumbs">
+        <li>Cadastros</li>
+        <li class="active">Professores</li>
+    </ol>
+  </div>
+</div>
+<br>
+<div class="card-panel">
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width: 2%">ID</th>
+        <th style="width: 7%">Registro</th>
+        <th style="width: 30%">Nome completo</th>
+        <th style="width: 26%">E-mail</th>
+        <th style="width: 14%">Criado em</th>
+        <th style="width: 14%; text-align: center">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @teachers.each do |teacher| %>
+        <tr>
+          <td><%= link_to teacher.id, teacher_path(teacher) %></td>
+          <td><%= teacher.registration %></td>
+          <td><%= teacher.name %></td>
+          <td><%= teacher.email %></td>
+          <td><%=l teacher.created_at, format: :short %></td>
+          <td style="text-align: center">
+            <%=link_to "<i class='material-icons'>delete</i>".html_safe, teacher_path(teacher), method: :delete, class: "waves-effect waves-circle btn-floating secondary-content" %>
+            <%=link_to "<i class='material-icons'>edit</i>".html_safe, edit_teacher_path(teacher), class: "waves-effect waves-circle btn-floating secondary-content cyan" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_teacher_path,
+              :class => 'waves-effect waves-light btn' %>
+
+</div>

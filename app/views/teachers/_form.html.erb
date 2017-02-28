@@ -1,0 +1,47 @@
+<div class="card-panel">
+
+  <%= form_for @teacher, :html => { :class => "form-horizontal teacher" } do |f| %>
+
+    <% if @teacher.errors.any? %>
+      <div id="error_expl" class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= pluralize(@teacher.errors.count, "error") %> impedem o professor de ser salvo:</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+          <% @teacher.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s4">
+        <%= f.label :registration %>
+        <%= f.text_field :registration%>
+      </div>
+
+      <div class="input-field col s8">
+        <%= f.label :name %>
+        <%= f.text_field :name%>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :email %>
+        <%= f.text_field :email%>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <%= f.submit nil, :class => 'waves-effect waves-light btn cyan' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                teachers_path, :class => 'waves-effect waves-light btn' %>
+    </div>
+
+  <% end %>
+
+</div>

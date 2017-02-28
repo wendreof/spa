@@ -1,0 +1,17 @@
+<%= form_for(@teacher_generating_theme) do |f| %>
+  <% if @teacher_generating_theme.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@teacher_generating_theme.errors.count, "error") %> prohibited this teacher_generating_theme from being saved:</h2>
+
+      <ul>
+      <% @teacher_generating_theme.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

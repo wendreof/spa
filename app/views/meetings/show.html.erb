@@ -1,0 +1,29 @@
+<%- model_class = Meeting -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @meeting.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:generating_theme_id) %>:</strong></dt>
+  <dd><%= @meeting.generating_theme_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:workload) %>:</strong></dt>
+  <dd><%= @meeting.workload %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:specific_skill_id) %>:</strong></dt>
+  <dd><%= @meeting.specific_skill_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:category_id) %>:</strong></dt>
+  <dd><%= @meeting.category_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:know_more) %>:</strong></dt>
+  <dd><%= @meeting.know_more %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              meetings_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_meeting_path(@meeting), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              meeting_path(@meeting),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Você tem certeza?')) },
+              :class => 'btn btn-danger' %>

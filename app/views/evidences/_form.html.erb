@@ -1,0 +1,51 @@
+<div class="card-panel">
+
+  <%= form_for @evidence, :html => { :class => "form-horizontal evidence" } do |f| %>
+
+    <% if @evidence.errors.any? %>
+      <div id="error_expl" class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= pluralize(@evidence.errors.count, "error") %> impedem a evidência de ser salva:</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+          <% @evidence.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select :attitudinal_skill_id, AttitudinalSkill.all.order(:tipo), :id, :tipo, {:prompt => 'Selecione uma competência atitudinal', :selected => @evidence.attitudinal_skill_id} %>
+        <%= f.label :attitudinal_skill_id %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :description %>
+        <%= f.text_field :description %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :long_description %>
+        <%= f.text_area :long_description, cols: 5, rows: 10, :class => 'materialize-textarea' %>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <%= f.submit nil, :class => 'waves-effect waves-light btn cyan' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                evidences_path, :class => 'waves-effect waves-light btn' %>
+    </div>
+
+  <% end %>
+
+</div>

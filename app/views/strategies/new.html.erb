@@ -1,0 +1,13 @@
+<%- model_class = Strategy -%>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h5 class="breadcrumbs-title">Estratégias</h5>
+    <ol class="breadcrumbs">
+        <li>Cadastros</li>
+        <li> <a href="<%= strategies_path %>">Estratégias</a></li>
+        <li class="active">Novo</li>
+    </ol>
+  </div>
+</div>
+<br>
+<%= render :partial => 'form' %>

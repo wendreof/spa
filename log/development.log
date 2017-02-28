@@ -1,0 +1,1885 @@
+  [1m[36mActiveRecord::SchemaMigration Load (169.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20160416183040)
+  [1m[35m (53.4ms)[0m  CREATE TABLE `categories` (`id` int(11) auto_increment PRIMARY KEY, `desctipion` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 19:39:43 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/2ec2fcacdc196d17/variables" for 127.0.0.1 at 2016-11-16 19:39:44 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20160416183040)
+  [1m[35m (1.2ms)[0m  CREATE TABLE `categories` (`id` int(11) auto_increment PRIMARY KEY, `desctipion` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 21:19:38 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (131.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/e0de9ca7241f91f9/variables" for 127.0.0.1 at 2016-11-16 21:19:39 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20160416183040)
+  [1m[35m (118.0ms)[0m  CREATE TABLE `categories` (`id` int(11) auto_increment PRIMARY KEY, `desctipion` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 21:25:31 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/ada720a29bffde5f/variables" for 127.0.0.1 at 2016-11-16 21:25:31 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 21:25:34 -0200
+  [1m[35mActiveRecord::SchemaMigration Load (24.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/f9460e83677fe9ff/variables" for 127.0.0.1 at 2016-11-16 21:25:34 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 21:25:37 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/b9e71eb494f61341/variables" for 127.0.0.1 at 2016-11-16 21:25:37 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20160416183040)
+  [1m[35m (1.8ms)[0m  CREATE TABLE `categories` (`id` int(11) auto_increment PRIMARY KEY, `desctipion` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (691.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (838.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20160416183040)
+  [1m[35m (349.4ms)[0m  CREATE TABLE `categories` (`id` int(11) auto_increment PRIMARY KEY, `desctipion` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (57.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160416183040')
+  [1m[36m (52.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCourses (20160416193744)
+  [1m[35m (390.1ms)[0m  CREATE TABLE `courses` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (17.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160416193744')
+  [1m[36m (46.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCourseModules (20160417193744)
+  [1m[35m (599.9ms)[0m  CREATE TABLE `course_modules` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `course_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_course_modules_on_course_id`  (`course_id`) ) ENGINE=InnoDB
+  [1m[36m (1616.2ms)[0m  [1mALTER TABLE `course_modules` ADD CONSTRAINT `fk_rails_74391d7a5f`
+FOREIGN KEY (`course_id`)
+  REFERENCES `courses` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160417193744')[0m
+  [1m[35m (75.0ms)[0m  COMMIT
+Migrating to CreateStudyUnits (20160418192939)
+  [1m[36m (1266.8ms)[0m  [1mCREATE TABLE `study_units` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `course_module_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_study_units_on_course_module_id`  (`course_module_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (1106.7ms)[0m  ALTER TABLE `study_units` ADD CONSTRAINT `fk_rails_ba91243668`
+FOREIGN KEY (`course_module_id`)
+  REFERENCES `course_modules` (`id`)
+
+  [1m[36m (11.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160418192939')
+  [1m[36m (118.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAttitudinalSkills (20160419153222)
+  [1m[35m (390.0ms)[0m  CREATE TABLE `attitudinal_skills` (`id` int(11) auto_increment PRIMARY KEY, `tipo` varchar(255), `Description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (19.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160419153222')
+  [1m[36m (55.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateVerbs (20160420232612)
+  [1m[35m (487.8ms)[0m  CREATE TABLE `verbs` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `category_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_verbs_on_category_id`  (`category_id`) ) ENGINE=InnoDB
+  [1m[36m (1116.5ms)[0m  [1mALTER TABLE `verbs` ADD CONSTRAINT `fk_rails_c64a4f1a61`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160420232612')[0m
+  [1m[35m (97.6ms)[0m  COMMIT
+Migrating to AddLongDescriptionToCategory (20160425214747)
+  [1m[36m (615.3ms)[0m  [1mALTER TABLE `categories` ADD `long_description` text[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160425214747')[0m
+  [1m[35m (42.3ms)[0m  COMMIT
+Migrating to AddEvidencesToAttitudinalSkill (20160425220834)
+  [1m[36m (747.1ms)[0m  [1mALTER TABLE `attitudinal_skills` ADD `evidence_one` text[0m
+  [1m[35m (791.3ms)[0m  ALTER TABLE `attitudinal_skills` ADD `evidence_two` text
+  [1m[36m (642.0ms)[0m  [1mALTER TABLE `attitudinal_skills` ADD `evidence_three` text[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160425220834')[0m
+  [1m[35m (69.6ms)[0m  COMMIT
+Migrating to CreateActivities (20160430164928)
+  [1m[36m (374.2ms)[0m  [1mCREATE TABLE `activities` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160430164928')[0m
+  [1m[35m (41.4ms)[0m  COMMIT
+Migrating to CreateResources (20160430174320)
+  [1m[36m (477.8ms)[0m  [1mCREATE TABLE `resources` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160430174320')[0m
+  [1m[35m (42.0ms)[0m  COMMIT
+Migrating to CreateSpecificSkills (20160430191638)
+  [1m[36m (389.1ms)[0m  [1mCREATE TABLE `specific_skills` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160430191638')[0m
+  [1m[35m (52.6ms)[0m  COMMIT
+Migrating to CreateRelationships (20160430192850)
+  [1m[36m (740.4ms)[0m  [1mCREATE TABLE `relationships` (`id` int(11) auto_increment PRIMARY KEY, `attitudinal_skill_id` int(11), `specific_skill_id` int(11), `verb_id` int(11), `activity_id` int(11), `attitudinal_skills_id` int(11), `specific_skills_id` int(11), `verbs_id` int(11), `activities_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_relationships_on_attitudinal_skills_id`  (`attitudinal_skills_id`) ,  INDEX `index_relationships_on_specific_skills_id`  (`specific_skills_id`) ,  INDEX `index_relationships_on_verbs_id`  (`verbs_id`) ,  INDEX `index_relationships_on_activities_id`  (`activities_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (1204.1ms)[0m  ALTER TABLE `relationships` ADD CONSTRAINT `fk_rails_0f610529b5`
+FOREIGN KEY (`attitudinal_skill_id`)
+  REFERENCES `attitudinal_skills` (`id`)
+
+  [1m[36m (1325.1ms)[0m  [1mALTER TABLE `relationships` ADD CONSTRAINT `fk_rails_12046f6804`
+FOREIGN KEY (`specific_skill_id`)
+  REFERENCES `specific_skills` (`id`)
+[0m
+  [1m[35m (1466.1ms)[0m  ALTER TABLE `relationships` ADD CONSTRAINT `fk_rails_bbb16f4e23`
+FOREIGN KEY (`verb_id`)
+  REFERENCES `verbs` (`id`)
+
+  [1m[36m (1519.7ms)[0m  [1mALTER TABLE `relationships` ADD CONSTRAINT `fk_rails_9d95d61872`
+FOREIGN KEY (`activity_id`)
+  REFERENCES `activities` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160430192850')[0m
+  [1m[35m (41.3ms)[0m  COMMIT
+Migrating to CreateMethodologies (20160507172130)
+  [1m[36m (359.3ms)[0m  [1mCREATE TABLE `methodologies` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `long_description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160507172130')[0m
+  [1m[35m (51.5ms)[0m  COMMIT
+Migrating to CreateGeneratingThemes (20160507174613)
+  [1m[36m (321.9ms)[0m  [1mCREATE TABLE `generating_themes` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `long_description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (15.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160507174613')[0m
+  [1m[35m (59.1ms)[0m  COMMIT
+Migrating to DeviseCreateUsers (20160514164123)
+  [1m[36m (478.3ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (291.8ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36m (276.4ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160514164123')[0m
+  [1m[35m (42.3ms)[0m  COMMIT
+Migrating to CreateTeachers (20160514180834)
+  [1m[36m (410.5ms)[0m  [1mCREATE TABLE `teachers` (`id` int(11) auto_increment PRIMARY KEY, `registration` varchar(255), `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160514180834')[0m
+  [1m[35m (64.0ms)[0m  COMMIT
+Migrating to CreatePlaneClassrooms (20160514182750)
+  [1m[36m (652.1ms)[0m  [1mCREATE TABLE `plane_classrooms` (`id` int(11) auto_increment PRIMARY KEY, `teacher_id` int(11), `generating_theme_id` int(11), `year` int(11), `semester` varchar(255), `course_id` int(11), `course_module_id` int(11), `study_unit_id` int(11), `workload` int(11), `menu` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_plane_classrooms_on_teacher_id`  (`teacher_id`) ,  INDEX `index_plane_classrooms_on_generating_theme_id`  (`generating_theme_id`) ,  INDEX `index_plane_classrooms_on_course_id`  (`course_id`) ,  INDEX `index_plane_classrooms_on_course_module_id`  (`course_module_id`) ,  INDEX `index_plane_classrooms_on_study_unit_id`  (`study_unit_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (1470.0ms)[0m  ALTER TABLE `plane_classrooms` ADD CONSTRAINT `fk_rails_74d5b29157`
+FOREIGN KEY (`teacher_id`)
+  REFERENCES `teachers` (`id`)
+
+  [1m[36m (1329.9ms)[0m  [1mALTER TABLE `plane_classrooms` ADD CONSTRAINT `fk_rails_a08f54561d`
+FOREIGN KEY (`generating_theme_id`)
+  REFERENCES `generating_themes` (`id`)
+[0m
+  [1m[35m (1258.8ms)[0m  ALTER TABLE `plane_classrooms` ADD CONSTRAINT `fk_rails_3b4653987e`
+FOREIGN KEY (`course_id`)
+  REFERENCES `courses` (`id`)
+
+  [1m[36m (1152.8ms)[0m  [1mALTER TABLE `plane_classrooms` ADD CONSTRAINT `fk_rails_d9699e2a49`
+FOREIGN KEY (`course_module_id`)
+  REFERENCES `course_modules` (`id`)
+[0m
+  [1m[35m (1194.6ms)[0m  ALTER TABLE `plane_classrooms` ADD CONSTRAINT `fk_rails_d6de4abccf`
+FOREIGN KEY (`study_unit_id`)
+  REFERENCES `study_units` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160514182750')
+  [1m[36m (51.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateEvidences (20160519004128)
+  [1m[35m (323.0ms)[0m  CREATE TABLE `evidences` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `long_description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160519004128')
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMeetings (20160521193117)
+  [1m[35m (733.3ms)[0m  CREATE TABLE `meetings` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `generating_theme_id` int(11), `workload` int(11), `specific_skill_id` int(11), `category_id` int(11), `know_more` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_meetings_on_generating_theme_id`  (`generating_theme_id`) ,  INDEX `index_meetings_on_specific_skill_id`  (`specific_skill_id`) ,  INDEX `index_meetings_on_category_id`  (`category_id`) ) ENGINE=InnoDB
+  [1m[36m (1058.3ms)[0m  [1mALTER TABLE `meetings` ADD CONSTRAINT `fk_rails_75724aa60d`
+FOREIGN KEY (`generating_theme_id`)
+  REFERENCES `generating_themes` (`id`)
+[0m
+  [1m[35m (1062.1ms)[0m  ALTER TABLE `meetings` ADD CONSTRAINT `fk_rails_7e5e5d3239`
+FOREIGN KEY (`specific_skill_id`)
+  REFERENCES `specific_skills` (`id`)
+
+  [1m[36m (1161.3ms)[0m  [1mALTER TABLE `meetings` ADD CONSTRAINT `fk_rails_9cb930a984`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (15.7ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160521193117')[0m
+  [1m[35m (125.0ms)[0m  COMMIT
+Migrating to CreateSpecificTechnicalCompetences (20160528123519)
+  [1m[36m (472.4ms)[0m  [1mCREATE TABLE `specific_technical_competences` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160528123519')[0m
+  [1m[35m (41.1ms)[0m  COMMIT
+Migrating to CreateStrategies (20160528131234)
+  [1m[36m (600.7ms)[0m  [1mCREATE TABLE `strategies` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `category_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_strategies_on_category_id`  (`category_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (1292.7ms)[0m  ALTER TABLE `strategies` ADD CONSTRAINT `fk_rails_c00c1e5cac`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160528131234')
+  [1m[36m (51.8ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveEvidencesToAttitudinalSkill (20160528141438)
+  [1m[35m (858.7ms)[0m  ALTER TABLE `attitudinal_skills` DROP `evidence_one`
+  [1m[36m (727.1ms)[0m  [1mALTER TABLE `attitudinal_skills` DROP `evidence_two`[0m
+  [1m[35m (524.6ms)[0m  ALTER TABLE `attitudinal_skills` DROP `evidence_three`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160528141438')
+  [1m[36m (41.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddPlaneClassroomToMeeting (20160528150006)
+  [1m[35m (1000.3ms)[0m  ALTER TABLE `meetings` ADD `plane_classroom_id` int(11)
+  [1m[36m (673.7ms)[0m  [1mCREATE  INDEX `index_meetings_on_plane_classroom_id`  ON `meetings` (`plane_classroom_id`) [0m
+  [1m[35m (1259.2ms)[0m  ALTER TABLE `meetings` ADD CONSTRAINT `fk_rails_59709e3b1b`
+FOREIGN KEY (`plane_classroom_id`)
+  REFERENCES `plane_classrooms` (`id`)
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160528150006')
+  [1m[36m (42.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMeetingAttitudinalSkills (20160604130609)
+  [1m[35m (781.3ms)[0m  CREATE TABLE `meeting_attitudinal_skills` (`id` int(11) auto_increment PRIMARY KEY, `meeting_id` int(11), `attitudinal_skill_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_meeting_attitudinal_skills_on_meeting_id`  (`meeting_id`) ,  INDEX `index_meeting_attitudinal_skills_on_attitudinal_skill_id`  (`attitudinal_skill_id`) ) ENGINE=InnoDB
+  [1m[36m (1116.4ms)[0m  [1mALTER TABLE `meeting_attitudinal_skills` ADD CONSTRAINT `fk_rails_f1d0e0f199`
+FOREIGN KEY (`meeting_id`)
+  REFERENCES `meetings` (`id`)
+[0m
+  [1m[35m (1204.7ms)[0m  ALTER TABLE `meeting_attitudinal_skills` ADD CONSTRAINT `fk_rails_49b12fd34c`
+FOREIGN KEY (`attitudinal_skill_id`)
+  REFERENCES `attitudinal_skills` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160604130609')
+  [1m[36m (40.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttitudinalSkillToEvidence (20160604153603)
+  [1m[35m (819.4ms)[0m  ALTER TABLE `evidences` ADD `attitudinal_skill_id` int(11)
+  [1m[36m (338.7ms)[0m  [1mCREATE  INDEX `index_evidences_on_attitudinal_skill_id`  ON `evidences` (`attitudinal_skill_id`) [0m
+  [1m[35m (1186.7ms)[0m  ALTER TABLE `evidences` ADD CONSTRAINT `fk_rails_30d15b5e17`
+FOREIGN KEY (`attitudinal_skill_id`)
+  REFERENCES `attitudinal_skills` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160604153603')
+  [1m[36m (42.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMeetingEvidences (20160604155312)
+  [1m[35m (656.9ms)[0m  CREATE TABLE `meeting_evidences` (`id` int(11) auto_increment PRIMARY KEY, `meeting_id` int(11), `evidence_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_meeting_evidences_on_meeting_id`  (`meeting_id`) ,  INDEX `index_meeting_evidences_on_evidence_id`  (`evidence_id`) ) ENGINE=InnoDB
+  [1m[36m (1627.7ms)[0m  [1mALTER TABLE `meeting_evidences` ADD CONSTRAINT `fk_rails_79ecce3b35`
+FOREIGN KEY (`meeting_id`)
+  REFERENCES `meetings` (`id`)
+[0m
+  [1m[35m (1871.0ms)[0m  ALTER TABLE `meeting_evidences` ADD CONSTRAINT `fk_rails_e9b53f6d6f`
+FOREIGN KEY (`evidence_id`)
+  REFERENCES `evidences` (`id`)
+
+  [1m[36m (14.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160604155312')
+  [1m[36m (59.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddTechnicalSkillToMeeting (20160604163100)
+  [1m[35m (2632.6ms)[0m  ALTER TABLE `meetings` ADD `technical_skill` text
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160604163100')
+  [1m[36m (67.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMeetingVerbs (20160604164852)
+  [1m[35m (916.6ms)[0m  CREATE TABLE `meeting_verbs` (`id` int(11) auto_increment PRIMARY KEY, `meeting_id` int(11), `verb_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_meeting_verbs_on_meeting_id`  (`meeting_id`) ,  INDEX `index_meeting_verbs_on_verb_id`  (`verb_id`) ) ENGINE=InnoDB
+  [1m[36m (1234.2ms)[0m  [1mALTER TABLE `meeting_verbs` ADD CONSTRAINT `fk_rails_8c11af280a`
+FOREIGN KEY (`meeting_id`)
+  REFERENCES `meetings` (`id`)
+[0m
+  [1m[35m (1136.6ms)[0m  ALTER TABLE `meeting_verbs` ADD CONSTRAINT `fk_rails_86b3a3b89d`
+FOREIGN KEY (`verb_id`)
+  REFERENCES `verbs` (`id`)
+
+  [1m[36m (14.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160604164852')
+  [1m[36m (60.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMeetingMethodologies (20160604170231)
+  [1m[35m (750.2ms)[0m  CREATE TABLE `meeting_methodologies` (`id` int(11) auto_increment PRIMARY KEY, `meeting_id` int(11), `methodology_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_meeting_methodologies_on_meeting_id`  (`meeting_id`) ,  INDEX `index_meeting_methodologies_on_methodology_id`  (`methodology_id`) ) ENGINE=InnoDB
+  [1m[36m (1183.0ms)[0m  [1mALTER TABLE `meeting_methodologies` ADD CONSTRAINT `fk_rails_08a3bcf1fc`
+FOREIGN KEY (`meeting_id`)
+  REFERENCES `meetings` (`id`)
+[0m
+  [1m[35m (1137.2ms)[0m  ALTER TABLE `meeting_methodologies` ADD CONSTRAINT `fk_rails_acf7ad7cf0`
+FOREIGN KEY (`methodology_id`)
+  REFERENCES `methodologies` (`id`)
+
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160604170231')
+  [1m[36m (51.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTeacherActivities (20160604175550)
+  [1m[35m (588.8ms)[0m  CREATE TABLE `teacher_activities` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `meeting_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_teacher_activities_on_meeting_id`  (`meeting_id`) ) ENGINE=InnoDB
+  [1m[36m (1226.7ms)[0m  [1mALTER TABLE `teacher_activities` ADD CONSTRAINT `fk_rails_c8de54d562`
+FOREIGN KEY (`meeting_id`)
+  REFERENCES `meetings` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160604175550')[0m
+  [1m[35m (42.1ms)[0m  COMMIT
+Migrating to CreateMeetingActivities (20160604175615)
+  [1m[36m (505.6ms)[0m  [1mCREATE TABLE `meeting_activities` (`id` int(11) auto_increment PRIMARY KEY, `meeting_id` int(11), `activity_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_meeting_activities_on_meeting_id`  (`meeting_id`) ,  INDEX `index_meeting_activities_on_activity_id`  (`activity_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (1317.4ms)[0m  ALTER TABLE `meeting_activities` ADD CONSTRAINT `fk_rails_4c8e151ae6`
+FOREIGN KEY (`meeting_id`)
+  REFERENCES `meetings` (`id`)
+
+  [1m[36m (1193.3ms)[0m  [1mALTER TABLE `meeting_activities` ADD CONSTRAINT `fk_rails_0d8504164b`
+FOREIGN KEY (`activity_id`)
+  REFERENCES `activities` (`id`)
+[0m
+  [1m[35m (20.4ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160604175615')[0m
+  [1m[35m (276.5ms)[0m  COMMIT
+Migrating to CreateMeetingStrategies (20160604185538)
+  [1m[36m (498.9ms)[0m  [1mCREATE TABLE `meeting_strategies` (`id` int(11) auto_increment PRIMARY KEY, `meeting_id` int(11), `strategy_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_meeting_strategies_on_meeting_id`  (`meeting_id`) ,  INDEX `index_meeting_strategies_on_strategy_id`  (`strategy_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (1105.4ms)[0m  ALTER TABLE `meeting_strategies` ADD CONSTRAINT `fk_rails_8e2074ef1d`
+FOREIGN KEY (`meeting_id`)
+  REFERENCES `meetings` (`id`)
+
+  [1m[36m (1484.0ms)[0m  [1mALTER TABLE `meeting_strategies` ADD CONSTRAINT `fk_rails_5aff424fd2`
+FOREIGN KEY (`strategy_id`)
+  REFERENCES `strategies` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160604185538')[0m
+  [1m[35m (41.4ms)[0m  COMMIT
+Migrating to CreateMeetingResources (20160604191322)
+  [1m[36m (615.9ms)[0m  [1mCREATE TABLE `meeting_resources` (`id` int(11) auto_increment PRIMARY KEY, `meeting_id` int(11), `resource_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_meeting_resources_on_meeting_id`  (`meeting_id`) ,  INDEX `index_meeting_resources_on_resource_id`  (`resource_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (1036.6ms)[0m  ALTER TABLE `meeting_resources` ADD CONSTRAINT `fk_rails_a6c523eb72`
+FOREIGN KEY (`meeting_id`)
+  REFERENCES `meetings` (`id`)
+
+  [1m[36m (1259.9ms)[0m  [1mALTER TABLE `meeting_resources` ADD CONSTRAINT `fk_rails_3acc28ceff`
+FOREIGN KEY (`resource_id`)
+  REFERENCES `resources` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160604191322')[0m
+  [1m[35m (40.7ms)[0m  COMMIT
+Migrating to CreateCourseModuleStudyUnits (20160611164019)
+  [1m[36m (671.1ms)[0m  [1mCREATE TABLE `course_module_study_units` (`id` int(11) auto_increment PRIMARY KEY, `course_module_id` int(11), `study_unit_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_course_module_study_units_on_course_module_id`  (`course_module_id`) ,  INDEX `index_course_module_study_units_on_study_unit_id`  (`study_unit_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (1119.0ms)[0m  ALTER TABLE `course_module_study_units` ADD CONSTRAINT `fk_rails_e631159769`
+FOREIGN KEY (`course_module_id`)
+  REFERENCES `course_modules` (`id`)
+
+  [1m[36m (1088.7ms)[0m  [1mALTER TABLE `course_module_study_units` ADD CONSTRAINT `fk_rails_40397ccfa1`
+FOREIGN KEY (`study_unit_id`)
+  REFERENCES `study_units` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160611164019')[0m
+  [1m[35m (55.4ms)[0m  COMMIT
+Migrating to AddInterdisciplinaryProjectToPlaneClassroom (20160611173136)
+  [1m[36m (2700.7ms)[0m  [1mALTER TABLE `plane_classrooms` ADD `interdisciplinary_project` text[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160611173136')[0m
+  [1m[35m (40.3ms)[0m  COMMIT
+Migrating to AddBasicBibliographyToPlaneClassroom (20160611173226)
+  [1m[36m (4268.0ms)[0m  [1mALTER TABLE `plane_classrooms` ADD `basic_bibliography` text[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160611173226')[0m
+  [1m[35m (85.6ms)[0m  COMMIT
+Migrating to AddAdditionalBibliographyToPlaneClassroom (20160611173305)
+  [1m[36m (1220.5ms)[0m  [1mALTER TABLE `plane_classrooms` ADD `additional_bibliography` text[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160611173305')[0m
+  [1m[35m (41.1ms)[0m  COMMIT
+Migrating to RemoveVerbFromRelationship (20160614223800)
+  [1m[36m (172.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'relationships'
+[0m
+  [1m[35m (12.8ms)[0m  SHOW CREATE TABLE `relationships`
+  [1m[36m (100.6ms)[0m  [1mALTER TABLE `relationships` DROP FOREIGN KEY fk_rails_bbb16f4e23[0m
+  [1m[35m (1239.2ms)[0m  ALTER TABLE `relationships` DROP `verb_id`
+  [1m[36m (27.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160614223800')
+  [1m[36m (99.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddCategoryToRelationship (20160614224202)
+  [1m[35m (1456.3ms)[0m  ALTER TABLE `relationships` ADD `category_id` int(11)
+  [1m[36m (589.9ms)[0m  [1mCREATE  INDEX `index_relationships_on_category_id`  ON `relationships` (`category_id`) [0m
+  [1m[35m (2038.0ms)[0m  ALTER TABLE `relationships` ADD CONSTRAINT `fk_rails_691622e6e0`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160614224202')
+  [1m[36m (77.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateActivitySugestions (20160707203246)
+  [1m[35m (344.6ms)[0m  CREATE TABLE `activity_sugestions` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160707203246')
+  [1m[36m (52.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateGeneratingThemeSugestions (20160707203749)
+  [1m[35m (566.7ms)[0m  CREATE TABLE `generating_theme_sugestions` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `long_description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160707203749')
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+Migrating to AddTheacherIdToGeneratingTheme (20160719003409)
+  [1m[35m (701.3ms)[0m  ALTER TABLE `generating_themes` ADD `teacher_id` int(11)
+  [1m[36m (424.8ms)[0m  [1mCREATE  INDEX `index_generating_themes_on_teacher_id`  ON `generating_themes` (`teacher_id`) [0m
+  [1m[35m (1070.7ms)[0m  ALTER TABLE `generating_themes` ADD CONSTRAINT `fk_rails_809b631d1c`
+FOREIGN KEY (`teacher_id`)
+  REFERENCES `teachers` (`id`)
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160719003409')
+  [1m[36m (85.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddTeacherRefToActivity (20160719222903)
+  [1m[35m (899.7ms)[0m  ALTER TABLE `activities` ADD `teacher_id` int(11)
+  [1m[36m (304.4ms)[0m  [1mCREATE  INDEX `index_activities_on_teacher_id`  ON `activities` (`teacher_id`) [0m
+  [1m[35m (1126.3ms)[0m  ALTER TABLE `activities` ADD CONSTRAINT `fk_rails_84377f5437`
+FOREIGN KEY (`teacher_id`)
+  REFERENCES `teachers` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160719222903')
+  [1m[36m (41.3ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeLongDescriptionTypeInMethodologies (20160811031932)
+  [1m[35m (1101.4ms)[0m  ALTER TABLE `methodologies` CHANGE `long_description` `long_description` text DEFAULT NULL
+  [1m[36m (38.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160811031932')
+  [1m[36m (103.2ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeLongDescriptionTypeInGeneratingThemes (20160811032441)
+  [1m[35m (1194.1ms)[0m  ALTER TABLE `generating_themes` CHANGE `long_description` `long_description` text DEFAULT NULL
+  [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160811032441')
+  [1m[36m (38.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'activities'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `activities`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'activity_sugestions'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `activity_sugestions`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'attitudinal_skills'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `attitudinal_skills`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'categories'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `categories`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'course_module_study_units'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `course_module_study_units`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'course_modules'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `course_modules`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'courses'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `courses`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'evidences'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `evidences`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'generating_theme_sugestions'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `generating_theme_sugestions`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'generating_themes'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `generating_themes`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'meeting_activities'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `meeting_activities`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'meeting_attitudinal_skills'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `meeting_attitudinal_skills`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'meeting_evidences'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `meeting_evidences`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'meeting_methodologies'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `meeting_methodologies`
+  [1m[36m (1.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'meeting_resources'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `meeting_resources`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'meeting_strategies'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `meeting_strategies`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'meeting_verbs'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `meeting_verbs`
+  [1m[36m (1.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'meetings'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `meetings`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'methodologies'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `methodologies`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'plane_classrooms'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `plane_classrooms`
+  [1m[36m (1.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'relationships'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `relationships`
+  [1m[36m (1.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'resources'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `resources`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'specific_skills'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `specific_skills`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'specific_technical_competences'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `specific_technical_competences`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'strategies'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `strategies`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'study_units'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `study_units`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'teacher_activities'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `teacher_activities`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'teachers'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `teachers`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'spa_development'
+  AND fk.table_name = 'verbs'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `verbs`
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 21:29:32 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlaneClassroomsController#index as HTML
+Completed 401 Unauthorized in 63ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-16 21:29:34 -0200
+Processing by Users::SessionsController#new as HTML
+  Rendered shared/_loader.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/user (107.4ms)
+Completed 200 OK in 1992ms (Views: 1918.0ms | ActiveRecord: 36.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-11-16 21:30:19 -0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (1061.4ms)
+Completed 200 OK in 1395ms (Views: 1244.6ms | ActiveRecord: 70.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (11.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (17.6ms)[0m  BEGIN
+  [1m[36mSQL (154.0ms)[0m  [1mINSERT INTO `teachers` (`registration`, `name`, `email`, `created_at`, `updated_at`) VALUES ('023035', 'Anderson Luis Ribeiro', 'anderson.ribeiro@unifeob.edu.br', '2016-11-16 23:30:45', '2016-11-16 23:30:45')[0m
+  [1m[35m (103.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `teachers` (`registration`, `name`, `email`, `created_at`, `updated_at`) VALUES ('000001', 'Wendreo Fernandes', 'wendreoofernandes@gmail.com', '2016-11-16 23:30:46', '2016-11-16 23:30:46')
+  [1m[36m (79.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `teachers` (`registration`, `name`, `email`, `created_at`, `updated_at`) VALUES ('000002', 'Felipe Queiroz', 'felipe96_09@hotmail.com', '2016-11-16 23:30:46', '2016-11-16 23:30:46')[0m
+  [1m[35m (124.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `teachers` (`registration`, `name`, `email`, `created_at`, `updated_at`) VALUES ('000003', 'Michele Colla de Oliveira', 'michele.oliveira@unifeob.edu.br', '2016-11-16 23:30:46', '2016-11-16 23:30:46')
+  [1m[36m (156.0ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 21:31:22 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlaneClassroomsController#index as HTML
+Completed 401 Unauthorized in 30ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-16 21:31:23 -0200
+Processing by Users::SessionsController#new as HTML
+  Rendered shared/_loader.html.erb (1.0ms)
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/user (67.5ms)
+Completed 200 OK in 1091ms (Views: 739.4ms | ActiveRecord: 195.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-11-16 21:33:38 -0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bRBNzZnhgBto65rMCHnq9KemHvS4PnG63QpHcz5DJRouFXCVLLoHA9oiwSqhTyqUfm+0Kg8ZQeRyE8rv+iuVjw==", "user"=>{"email"=>"wendreoofernandes@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Inscrever-se"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (162.8ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wendreoofernandes@gmail.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('wendreoofernandes@gmail.com', '$2a$11$EDj1Ba1ztsOOYjo69Xe4cOmY4EjXG/FVguFyWZUO.HgSIfr6TTx9W', '2016-11-16 23:33:39', '2016-11-16 23:33:39')[0m
+  [1m[35m (75.0ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (46.3ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2016-11-16 23:33:40', `current_sign_in_at` = '2016-11-16 23:33:40', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2016-11-16 23:33:40' WHERE `users`.`id` = 1
+  [1m[36m (95.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2061ms (ActiveRecord: 426.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 21:33:40 -0200
+Processing by PlaneClassroomsController#index as HTML
+  [1m[35mUser Load (27.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTeacher Load (0.8ms)[0m  [1mSELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1[0m
+  Rendered shared/_loader.html.erb (0.4ms)
+  [1m[35mPlaneClassroom Load (15.4ms)[0m  SELECT `plane_classrooms`.* FROM `plane_classrooms` WHERE `plane_classrooms`.`teacher_id` = 2
+  Rendered plane_classrooms/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 326ms (Views: 183.4ms | ActiveRecord: 62.2ms)
+
+
+Started GET "/plane_classrooms/new" for 127.0.0.1 at 2016-11-16 21:33:49 -0200
+Processing by PlaneClassroomsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mTeacher Load (0.8ms)[0m  SELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1
+  [1m[36mCourse Load (0.5ms)[0m  [1mSELECT `courses`.* FROM `courses`[0m
+  [1m[35mStudyUnit Load (10.5ms)[0m  SELECT `study_units`.* FROM `study_units`
+  Rendered plane_classrooms/_form.html.erb (129.2ms)
+  Rendered plane_classrooms/new.html.erb within layouts/application (138.2ms)
+Completed 200 OK in 256ms (Views: 160.1ms | ActiveRecord: 72.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 23:33:44 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (34.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlaneClassroomsController#index as HTML
+Completed 401 Unauthorized in 46ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-16 23:33:46 -0200
+Processing by Users::SessionsController#new as HTML
+  Rendered shared/_loader.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/user (129.2ms)
+Completed 200 OK in 1061ms (Views: 1014.0ms | ActiveRecord: 20.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-11-16 23:33:53 -0200
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L7iWrlWd0YAuwXWQPl06j8nFD51T3gYnBAK1EPJAQP06hT/1Ld5ZMAqmjUka4dSF8TnrvCXgeQV6rVBNUGrmYA==", "user"=>{"email"=>"wendreoofernandes@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[35mUser Load (18.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (42.7ms)[0m  UPDATE `users` SET `remember_created_at` = '2016-11-17 01:33:53', `updated_at` = '2016-11-17 01:33:53' WHERE `users`.`id` = 1
+  [1m[36m (56.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE `users` SET `current_sign_in_at` = '2016-11-17 01:33:54', `sign_in_count` = 2, `updated_at` = '2016-11-17 01:33:54' WHERE `users`.`id` = 1[0m
+  [1m[35m (48.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 783ms (ActiveRecord: 167.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 23:33:54 -0200
+Processing by PlaneClassroomsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mTeacher Load (0.7ms)[0m  SELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1
+  Rendered shared/_loader.html.erb (0.1ms)
+  [1m[36mPlaneClassroom Load (1.0ms)[0m  [1mSELECT `plane_classrooms`.* FROM `plane_classrooms` WHERE `plane_classrooms`.`teacher_id` = 2[0m
+  Rendered plane_classrooms/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 268ms (Views: 150.5ms | ActiveRecord: 25.7ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2016-11-16 23:34:01 -0200
+Processing by TeachersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_loader.html.erb (0.1ms)
+  [1m[36mTeacher Load (0.5ms)[0m  [1mSELECT `teachers`.* FROM `teachers`[0m
+  Rendered teachers/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 112ms (Views: 107.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/plane_classrooms" for 127.0.0.1 at 2016-11-16 23:34:12 -0200
+Processing by PlaneClassroomsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTeacher Load (0.6ms)[0m  [1mSELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1[0m
+  Rendered shared/_loader.html.erb (0.1ms)
+  [1m[35mPlaneClassroom Load (0.6ms)[0m  SELECT `plane_classrooms`.* FROM `plane_classrooms` WHERE `plane_classrooms`.`teacher_id` = 2
+  Rendered plane_classrooms/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 105ms (Views: 98.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/plane_classrooms/new" for 127.0.0.1 at 2016-11-16 23:34:16 -0200
+Processing by PlaneClassroomsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mTeacher Load (0.5ms)[0m  SELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1
+  [1m[36mCourse Load (10.3ms)[0m  [1mSELECT `courses`.* FROM `courses`[0m
+  [1m[35mStudyUnit Load (23.0ms)[0m  SELECT `study_units`.* FROM `study_units`
+  Rendered plane_classrooms/_form.html.erb (115.9ms)
+  Rendered plane_classrooms/new.html.erb within layouts/application (118.6ms)
+
+
+Started GET "/plane_classrooms/new" for 127.0.0.1 at 2016-11-16 23:34:16 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Completed 200 OK in 253ms (Views: 172.4ms | ActiveRecord: 36.9ms)
+Processing by PlaneClassroomsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTeacher Load (0.6ms)[0m  [1mSELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1[0m
+  [1m[35mCourse Load (0.5ms)[0m  SELECT `courses`.* FROM `courses`
+  [1m[36mStudyUnit Load (0.6ms)[0m  [1mSELECT `study_units`.* FROM `study_units`[0m
+  Rendered plane_classrooms/_form.html.erb (1232.2ms)
+  Rendered plane_classrooms/new.html.erb within layouts/application (1242.7ms)
+Completed 200 OK in 1868ms (Views: 1706.0ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/course_modules.json?course_id=" for 127.0.0.1 at 2016-11-16 23:34:32 -0200
+Processing by CourseModulesController#index as JSON
+  Parameters: {"course_id"=>""}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCourseModule Load (23.2ms)[0m  [1mSELECT `course_modules`.* FROM `course_modules`[0m
+  Rendered course_modules/index.json.jbuilder (64.5ms)
+Completed 200 OK in 100ms (Views: 64.0ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/course_modules.json?course_id=" for 127.0.0.1 at 2016-11-16 23:34:34 -0200
+Processing by CourseModulesController#index as JSON
+  Parameters: {"course_id"=>""}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCourseModule Load (0.4ms)[0m  [1mSELECT `course_modules`.* FROM `course_modules`[0m
+  Rendered course_modules/index.json.jbuilder (1.3ms)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/course_modules.json?course_id=" for 127.0.0.1 at 2016-11-16 23:34:37 -0200
+Processing by CourseModulesController#index as JSON
+  Parameters: {"course_id"=>""}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCourseModule Load (0.5ms)[0m  [1mSELECT `course_modules`.* FROM `course_modules`[0m
+  Rendered course_modules/index.json.jbuilder (1.7ms)
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2016-11-16 23:34:39 -0200
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_loader.html.erb (0.5ms)
+  [1m[36mCourse Load (1.1ms)[0m  [1mSELECT `courses`.* FROM `courses`[0m
+  Rendered courses/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 134ms (Views: 117.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-17 00:21:39 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (22.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlaneClassroomsController#index as HTML
+  [1m[35mUser Load (13.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTeacher Load (0.7ms)[0m  [1mSELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1[0m
+  Rendered shared/_loader.html.erb (1.4ms)
+  [1m[35mPlaneClassroom Load (19.6ms)[0m  SELECT `plane_classrooms`.* FROM `plane_classrooms` WHERE `plane_classrooms`.`teacher_id` = 2
+  Rendered plane_classrooms/index.html.erb within layouts/application (1110.8ms)
+Completed 200 OK in 2258ms (Views: 1985.5ms | ActiveRecord: 82.5ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-17 00:21:42 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (76.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (59.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (524.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-17 00:21:43 -0200
+Processing by PlaneClassroomsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mTeacher Load (0.5ms)[0m  SELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1
+  Rendered shared/_loader.html.erb (0.1ms)
+  [1m[36mPlaneClassroom Load (0.5ms)[0m  [1mSELECT `plane_classrooms`.* FROM `plane_classrooms` WHERE `plane_classrooms`.`teacher_id` = 2[0m
+  Rendered plane_classrooms/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 77ms (Views: 70.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-17 00:21:43 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (65.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (329.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (77.1ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-17 00:21:45 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (26.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (161.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-19 10:51:06 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (212.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlaneClassroomsController#index as HTML
+  [1m[35mUser Load (65.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTeacher Load (0.8ms)[0m  [1mSELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1[0m
+  Rendered shared/_loader.html.erb (0.8ms)
+  [1m[35mPlaneClassroom Load (19.7ms)[0m  SELECT `plane_classrooms`.* FROM `plane_classrooms` WHERE `plane_classrooms`.`teacher_id` = 2
+  Rendered plane_classrooms/index.html.erb within layouts/application (1144.3ms)
+Completed 200 OK in 2453ms (Views: 2069.2ms | ActiveRecord: 182.4ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-19 10:51:10 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (58.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (57.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (446.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.5ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-19 10:51:12 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (44.1ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (209.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (85.3ms)
+
+
+Started GET "/plane_classrooms/new" for 127.0.0.1 at 2016-11-19 10:51:15 -0200
+Processing by PlaneClassroomsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mTeacher Load (0.6ms)[0m  SELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1
+  [1m[36mCourse Load (10.7ms)[0m  [1mSELECT `courses`.* FROM `courses`[0m
+  [1m[35mStudyUnit Load (24.6ms)[0m  SELECT `study_units`.* FROM `study_units`
+  Rendered plane_classrooms/_form.html.erb (116.0ms)
+  Rendered plane_classrooms/new.html.erb within layouts/application (118.0ms)
+Completed 200 OK in 200ms (Views: 140.4ms | ActiveRecord: 38.7ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-19 10:51:15 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (34.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (172.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2016-11-19 10:51:20 -0200
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_loader.html.erb (0.1ms)
+  [1m[35mCourse Load (0.5ms)[0m  SELECT `courses`.* FROM `courses`
+  Rendered courses/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 72ms (Views: 66.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-19 10:51:20 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (37.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (179.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.3ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-19 10:51:21 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (53.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (192.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (80.0ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-11-19 10:51:26 -0200
+Processing by CoursesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered courses/_course_module_fields.html.erb (1.6ms)
+  Rendered courses/_form.html.erb (166.3ms)
+  Rendered courses/new.html.erb within layouts/application (168.2ms)
+Completed 200 OK in 253ms (Views: 180.4ms | ActiveRecord: 64.1ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-19 10:51:26 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (36.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (181.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.2ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-19 10:51:27 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (33.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (166.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.9ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2016-11-19 10:51:35 -0200
+Processing by CoursesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1mMlbdXxXPIOLiJm/sKk1lHKUzr2ukn1jKjdaLNGhZGVZhg1YKrb6rzneYBX9GS2iAP55EGdeasjsVD0dy41BA==", "course"=>{"description"=>"ADS", "course_modules_attributes"=>{"1479559891932"=>{"description"=>"1", "_destroy"=>"false"}}}, "commit"=>"Criar Curso"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (95.9ms)[0m  INSERT INTO `courses` (`description`, `created_at`, `updated_at`) VALUES ('ADS', '2016-11-19 12:51:35', '2016-11-19 12:51:35')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `course_modules` (`description`, `course_id`, `created_at`, `updated_at`) VALUES ('1', 1, '2016-11-19 12:51:35', '2016-11-19 12:51:35')[0m
+  [1m[35m (99.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 213ms (ActiveRecord: 197.7ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2016-11-19 10:51:35 -0200
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_loader.html.erb (0.1ms)
+  [1m[35mCourse Load (0.4ms)[0m  SELECT `courses`.* FROM `courses`
+  Rendered courses/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 75ms (Views: 69.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/images/logomao.jpg" for 127.0.0.1 at 2016-11-19 10:51:35 -0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logomao.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (36.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.2ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (187.6ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.8ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/wendreo/.rvm/gems/ruby-2.3.1@spa/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-21 22:05:00 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (23.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlaneClassroomsController#index as HTML
+  [1m[35mUser Load (15.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTeacher Load (0.6ms)[0m  [1mSELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1[0m
+  Rendered shared/_loader.html.erb (0.8ms)
+  [1m[35mPlaneClassroom Load (19.8ms)[0m  SELECT `plane_classrooms`.* FROM `plane_classrooms` WHERE `plane_classrooms`.`teacher_id` = 2
+  Rendered plane_classrooms/index.html.erb within layouts/application (1089.3ms)
+Completed 200 OK in 2501ms (Views: 2241.7ms | ActiveRecord: 95.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:09:42 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (111.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlaneClassroomsController#index as HTML
+  [1m[35mUser Load (15.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (30.6ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2016-11-17 01:33:54', `current_sign_in_at` = '2016-11-29 17:09:43', `sign_in_count` = 3, `updated_at` = '2016-11-29 17:09:43' WHERE `users`.`id` = 1
+  [1m[36m (48.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mTeacher Load (0.8ms)[0m  SELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1
+  Rendered shared/_loader.html.erb (0.9ms)
+  [1m[36mPlaneClassroom Load (1.4ms)[0m  [1mSELECT `plane_classrooms`.* FROM `plane_classrooms` WHERE `plane_classrooms`.`teacher_id` = 2[0m
+  Rendered plane_classrooms/index.html.erb within layouts/application (993.5ms)
+Completed 200 OK in 2366ms (Views: 2013.3ms | ActiveRecord: 145.3ms)
+
+
+Started GET "/plane_classrooms/new" for 127.0.0.1 at 2016-11-29 15:09:49 -0200
+Processing by PlaneClassroomsController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTeacher Load (0.5ms)[0m  [1mSELECT  `teachers`.* FROM `teachers` WHERE `teachers`.`email` = 'wendreoofernandes@gmail.com'  ORDER BY `teachers`.`id` ASC LIMIT 1[0m
+  [1m[35mCourse Load (9.8ms)[0m  SELECT `courses`.* FROM `courses`
+  [1m[36mStudyUnit Load (16.7ms)[0m  [1mSELECT `study_units`.* FROM `study_units`[0m
+  Rendered plane_classrooms/_form.html.erb (163.9ms)
+  Rendered plane_classrooms/new.html.erb within layouts/application (166.4ms)
+Completed 200 OK in 321ms (Views: 263.1ms | ActiveRecord: 30.6ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2016-11-29 15:09:54 -0200
+Processing by TeachersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_loader.html.erb (0.1ms)
+  [1m[36mTeacher Load (0.7ms)[0m  [1mSELECT `teachers`.* FROM `teachers`[0m
+  Rendered teachers/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 130ms (Views: 123.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2016-11-29 15:09:57 -0200
+Processing by TeachersController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered teachers/_form.html.erb (9.8ms)
+  Rendered teachers/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 98ms (Views: 94.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/teachers" for 127.0.0.1 at 2016-11-29 15:10:05 -0200
+Processing by TeachersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rCQIEIOIbf8YFF36NSpXMVEZgLZdLarZgVkBMt+p8C+iGf2NqOriQZi2daN7JOe8TXlZ+v6XeqqB0wtz9sHrpg==", "teacher"=>{"registration"=>"123213", "name"=>"abcv", "email"=>"eqeqwe@wewqewq"}, "commit"=>"Criar Professor"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `teachers` (`registration`, `name`, `email`, `created_at`, `updated_at`) VALUES ('123213', 'abcv', 'eqeqwe@wewqewq', '2016-11-29 17:10:05', '2016-11-29 17:10:05')[0m
+  [1m[35m (77.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/teachers
+Completed 302 Found in 89ms (ActiveRecord: 78.4ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2016-11-29 15:10:05 -0200
+Processing by TeachersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_loader.html.erb (0.1ms)
+  [1m[35mTeacher Load (0.5ms)[0m  SELECT `teachers`.* FROM `teachers`
+  Rendered teachers/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 132ms (Views: 127.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 13:15:31 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (315.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlaneClassroomsController#index as HTML
+Completed 401 Unauthorized in 56ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 13:15:34 -0200
+Processing by Users::SessionsController#new as HTML
+  Rendered shared/_loader.html.erb (0.9ms)
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/user (118.7ms)
+Completed 200 OK in 1156ms (Views: 1003.9ms | ActiveRecord: 121.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-11 10:52:49 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (399.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlaneClassroomsController#index as HTML
+Completed 401 Unauthorized in 52ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-11 10:52:52 -0200
+Processing by Users::SessionsController#new as HTML
+  Rendered shared/_loader.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/user (241.1ms)
+Completed 200 OK in 1490ms (Views: 1420.1ms | ActiveRecord: 29.0ms)

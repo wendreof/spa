@@ -1,0 +1,458 @@
+pt-BR:
+  activerecord:
+    models:
+      category:
+        one: "Domínio Cognitivo"
+        other: "Domínios Cognitivos"
+      course_module:
+        one: "Modulo do Curso"
+        other: "Modulos do Curso"
+      teacher:
+        one: "Professor"
+        other: "Professores"
+      course:
+        one: "Curso"
+        other: "Cursos "
+      meeting:
+        one: "Encontro"
+        other: "Encontros"
+      generating_theme:
+        one: "Tema Gerador"
+        other: "Temas Geradores"
+      generating_theme_sugestion:
+        one: "Sugestão de Tema Gerador"
+        other: "Sugestão de Temas Geradores"
+      plane_classroom:
+        one: "Plano de Aula"
+        other: "Plano de Aulas"
+      evidence:
+        one: "Evidência"
+        other: "Evidências"
+      methodology:
+        one: "Metodologia"
+        other: "Metologias"
+      specific_skill:
+        one: "Competência Específica"
+        other: "Competências Específicas"
+      methodology:
+        one: "Metodologia"
+        other: "Metodologias"
+      resource:
+        one: "Recurso"
+        other: "Recursos"
+      study_unit:
+        one: "Unidade de Estudo"
+        other: "Unidades de Estudo"
+      course_module_study_unit:
+        one: "Unidade de Estudo do Módulo"
+        other: "Unidades de Estudo dos Módulos"
+      activity:
+        one: "Atividade"
+        other: "Atividades"
+      activity_sugestion:
+        one: "Sugestão de Atividade"
+        other: "Sugestões de Atividades"
+      attitudinal_skill:
+        one: "Competência Atitudinal"
+        other: "Competências Atitudinais"
+      strategy:
+        one: "Estratégia"
+        other: "Estratégias"
+      relationship:
+        one: "Relacionamento"
+        other: "Relacionamentos"
+      verb:
+        one: "Verbo"
+        other: "Verbos"
+
+
+    attributes:
+      course_module:
+        description: "Descrição"
+        course_id: "Curso"
+        created_at: "Criado em"
+      study_unit:
+        description: "Descrição"
+        course_module_id: "Modulo do Curso"
+        created_at: "Criado em"
+      course_module_study_unit:
+        course_module_id: "Módulo"
+        study_unit_id: "Unidade de Estudo"
+        created_at: "Criado em"
+      teacher:
+        registration: "Registro"
+        name: "Nome completo"
+        email: "E-mail"
+        created_at: "Criado em"
+      course:
+        description: "Descrição"
+        created_at: "Criado em"
+      meeting:
+        name: "Nome do Encontro"
+        workload: "Carga Horária do Encontro"
+        generating_theme_id: "Tema Gerador"
+        specific_skill_id: "Competências Específicas"
+        attitudinal_skill_ids: "Competências Atitudinais"
+        category_id: "Domínio Cognitivo"
+        verb_ids: "Verbos"
+        techinical_skill: "Competência Técnica"
+        methodology_ids: "Metodologias"
+        strategy_ids: "Estratégias"
+        activity_ids: "Atividades"
+        resource_ids: "Recursos"
+        evidence_ids: "Evidência de Aprendizagem"
+        know_more: "Saiba Mais"
+      generating_theme:
+        description: "Descrição"
+        long_description: "Descrição completa"
+        created_at: "Criado em"
+      generating_theme_sugestion:
+        description: "Descrição"
+        long_description: "Descrição completa"
+        created_at: "Criado em"
+      evidence:
+        description: "Descrição"
+        long_description: "Descrição completa"
+        attitudinal_skill_id: "Competência Atitudinal"
+        created_at: "Criado em"
+      specific_skill:
+        description: "Descrição"
+        created_at: "Criado em"
+      plane_classroom:
+        year: "Ano"
+        teacher_id: "Professor"
+        course_id: "Curso"
+        course: "Curso"
+        course_module_id: "Módulo"
+        course_module: "Módulo"
+        study_unit_id: "Unidade de Estudo"
+        study_unit: "Unidade de Estudo"
+        workload: "Carga Horária"
+        menu: "Ementa"
+        interdisciplinary_project: "Descrição do Projeto Interdisciplinar"
+        basic_bibliography: "Bibliografias Básicas"
+        additional_bibliography: "Bibliografias Complementares"
+        semester: "Semestre"
+      strategy:
+        category_id: "Domínio Cognitivo"
+        description: "Descrição"
+        long_description: "Descrição completa"
+        created_at: "Criado em"
+      relationship:
+        attitudinal_skill_id: "Competência Atitudinal"
+        specific_skill_id: "Competências Específicas"
+        category_id: "Domínio Cognitivo"
+        activity_id: "Atividade"
+        created_at: "Criado em"
+      resource:
+        description: "Descrição"
+        created_at: "Criado em"
+      activity:
+        description: "Descrição"
+        created_at: "Criado em"
+      activity_sugestion:
+        description: "Descrição"
+        created_at: "Criado em"
+      attitudinal_skill:
+        Description: "Descrição"
+        evidence_one: "Primeira evidência"
+        evidence_two: "Segunda evidência"
+        evidence_three: "Terceira evidência"
+        created_at: "Criado em"
+      category:
+        description: "Domínio Cognitivo"
+        desctipion: "Domínios Cognitivos"
+        long_description: "Descrição completa"
+        created_at: "Criado em"
+      methodology:
+        description: "Descrição"
+        desctipion: "Descrição"
+        long_description: "Descrição completa"
+        created_at: "Criado em"
+      verb:
+        description: "Descrição"
+        category_id: "Domínio Cognitivo"
+        created_at: "Criado em"
+    errors:
+      messages:
+        record_invalid: 'A validação falhou: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Não é possível excluir o registro pois existe um %{record} dependente
+          has_many: Não é possível excluir o registro pois existem %{record} dependentes
+  date:
+    abbr_day_names:
+    - Dom
+    - Seg
+    - Ter
+    - Qua
+    - Qui
+    - Sex
+    - Sáb
+    abbr_month_names:
+    -
+    - Jan
+    - Fev
+    - Mar
+    - Abr
+    - Mai
+    - Jun
+    - Jul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dez
+    day_names:
+    - Domingo
+    - Segunda-feira
+    - Terça-feira
+    - Quarta-feira
+    - Quinta-feira
+    - Sexta-feira
+    - Sábado
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d de %B de %Y"
+      short: "%d de %B"
+    month_names:
+    -
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente 1 hora
+        other: aproximadamente %{count} horas
+      about_x_months:
+        one: aproximadamente 1 mês
+        other: aproximadamente %{count} meses
+      about_x_years:
+        one: aproximadamente 1 ano
+        other: aproximadamente %{count} anos
+      almost_x_years:
+        one: quase 1 ano
+        other: quase %{count} anos
+      half_a_minute: meio minuto
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      over_x_years:
+        one: mais de 1 ano
+        other: mais de %{count} anos
+      x_days:
+        one: 1 dia
+        other: "%{count} dias"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_months:
+        one: 1 mês
+        other: "%{count} meses"
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+    prompts:
+      day: Dia
+      hour: Hora
+      minute: Minuto
+      month: Mês
+      second: Segundo
+      year: Ano
+    devise:
+    confirmations:
+      confirmed: 'Sua conta foi confirmada com sucesso. Você está logado.'
+      send_instructions: 'Dentro de minutos, você receberá um e-mail com instruções para a confirmação da sua conta.'
+      send_paranoid_instructions: 'Se o seu endereço de e-mail estiver cadastrado, você receberá uma mensagem com instruções para confirmação da sua conta.'
+    failure:
+      already_authenticated: 'Você já está logado.'
+      inactive: 'Sua conta ainda não foi ativada.'
+      invalid: 'E-mail ou senha inválidos.'
+      invalid_token: 'O token de autenticação não é válido.'
+      locked: 'Sua conta está bloqueada.'
+      not_found_in_database: 'E-mail ou senha inválidos.'
+      timeout: 'Sua sessão expirou, por favor, efetue login novamente para continuar.'
+      unauthenticated: 'Para continuar, efetue login ou registre-se.'
+      unconfirmed: 'Antes de continuar, confirme a sua conta.'
+    mailer:
+      confirmation_instructions:
+        subject: 'Instruções de confirmação'
+      reset_password_instructions:
+        subject: 'Instruções de troca de senha'
+      unlock_instructions:
+        subject: 'Instruções de desbloqueio'
+    omniauth_callbacks:
+      failure: 'Não foi possível autenticá-lo como %{kind} porque "%{reason}".'
+      success: 'Autenticado com sucesso com uma conta de %{kind}.'
+    passwords:
+      no_token: "Você só pode acessar essa página através de um e-mail de troca de senha. Se já estiver acessando por um e-mail, verifique se a URL fornecida está completa."
+      send_instructions: 'Dentro de minutos, você receberá um e-mail com instruções para a troca da sua senha.'
+      send_paranoid_instructions: 'Se o seu endereço de e-mail estiver cadastrado, você receberá um link de recuperação da senha via e-mail.'
+      updated: 'Sua senha foi alterada com sucesso. Você está logado.'
+      updated_not_active: 'Sua senha foi alterada com sucesso.'
+    registrations:
+      destroyed: 'Tchau! Sua conta foi cancelada com sucesso. Esperamos vê-lo novamente em breve.'
+      signed_up: 'Login efetuado com sucesso. Se não foi autorizado, a confirmação será enviada por e-mail.'
+      signed_up_but_inactive: 'Você foi cadastrado com sucesso. No entanto, não foi possível efetuar login, pois sua conta não foi ativada.'
+      signed_up_but_locked: 'Você foi cadastrado com sucesso. No entanto, não foi possível efetuar login, pois sua conta está bloqueada.'
+      signed_up_but_unconfirmed: 'Uma mensagem com um link de confirmação foi enviada para o seu endereço de e-mail. Por favor, abra o link para confirmar a sua conta.'
+      update_needs_confirmation: 'Você atualizou a sua conta com sucesso, mas o seu novo endereço de e-mail precisa ser confirmado. Por favor, acesse-o e clique no link de confirmação que enviamos.'
+      updated: 'Sua conta foi atualizada com sucesso.'
+    sessions:
+      signed_in: 'Login efetuado com sucesso!'
+      signed_out: 'Saiu com sucesso.'
+    unlocks:
+      send_instructions: 'Dentro de minutos, você receberá um email com instruções para o desbloqueio da sua conta.'
+      send_paranoid_instructions: 'Se sua conta existir, você receberá um e-mail com instruções para desbloqueá-la em alguns minutos.'
+      unlocked: 'Sua conta foi desbloqueada com sucesso. Efetue login para continuar.'
+
+  errors:
+    messages:
+      already_confirmed: "já foi confirmado"
+      confirmation_period_expired: "precisa ser confirmada em até %{period}, por favor, solicite uma nova"
+      expired: "expirou, por favor, solicite uma nova"
+      not_found: "não encontrado"
+      not_locked: "não foi bloqueado"
+      not_saved:
+        one: "Não foi possível salvar %{resource}: 1 erro"
+        other: "Não foi possível salvar %{resource}: %{count} erros."
+
+
+
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: deve ser aceito
+      blank: não pode ficar em branco
+      present: deve ficar em branco
+      confirmation: não é igual a %{attribute}
+      empty: não pode ficar vazio
+      equal_to: deve ser igual a %{count}
+      even: deve ser par
+      exclusion: não está disponível
+      greater_than: deve ser maior que %{count}
+      greater_than_or_equal_to: deve ser maior ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: não é válido
+      less_than: deve ser menor que %{count}
+      less_than_or_equal_to: deve ser menor ou igual a %{count}
+      model_invalid: 'A validação falhou: %{errors}'
+      not_a_number: não é um número
+      not_an_integer: não é um número inteiro
+      odd: deve ser ímpar
+      required: deve existir
+      taken: já está em uso
+      too_long:
+        one: 'é muito longo (máximo: 1 caracter)'
+        other: 'é muito longo (máximo: %{count} caracteres)'
+      too_short:
+        one: 'é muito curto (mínimo: 1 caracter)'
+        other: 'é muito curto (mínimo: %{count} caracteres)'
+      wrong_length:
+        one: não possui o tamanho esperado (1 caracter)
+        other: não possui o tamanho esperado (%{count} caracteres)
+      other_than: deve ser diferente de %{count}
+    template:
+      body: 'Por favor, verifique o(s) seguinte(s) campo(s):'
+      header:
+        one: 'Não foi possível gravar %{model}: 1 erro'
+        other: 'Não foi possível gravar %{model}: %{count} erros'
+  helpers:
+    select:
+      prompt: Por favor selecione
+    submit:
+      create: Criar %{model}
+      submit: Salvar %{model}
+      update: Atualizar %{model}
+    actions: 'Ações'
+    links:
+      cancel: "Cancelar"
+      back: "Voltar"
+      edit: "Editar"
+      destroy: "Deletar"
+      new: "Novo"
+
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%u %n"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: R$
+    format:
+      delimiter: "."
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            one: bilhão
+            other: bilhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+          thousand: mil
+          trillion:
+            one: trilhão
+            other: trilhões
+          unit: ''
+      format:
+        delimiter: "."
+        precision: 2
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: "."
+        format: "%n%"
+    precision:
+      format:
+        delimiter: "."
+  support:
+    array:
+      last_word_connector: " e "
+      two_words_connector: " e "
+      words_connector: ", "
+  time:
+    am: ''
+    formats:
+      default: "%a, %d de %B de %Y, %H:%M:%S"
+      long: "%d de %B de %Y, %H:%M"
+      short: "%d de %B, %H:%M"
+    pm: ''

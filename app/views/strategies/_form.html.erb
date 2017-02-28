@@ -1,0 +1,41 @@
+<div class="card-panel">
+
+  <%= form_for @strategy, :html => { :class => "form-horizontal strategy" } do |f| %>
+
+    <% if @strategy.errors.any? %>
+      <div id="error_expl" class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= pluralize(@strategy.errors.count, "error") %> impedem estratégia de ser salva:</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+          <% @strategy.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select :category_id, Category.all, :id, :desctipion, {:prompt => 'Selecione um Domínio Cognitivo', :selected => @strategy.category_id}, {:class => 'form-control'} %>
+        <%= f.label :category_id %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :description %>
+        <%= f.text_field :description%>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <%= f.submit nil, :class => 'waves-effect waves-light btn cyan' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                strategies_path, :class => 'waves-effect waves-light btn' %>
+    </div>
+
+  <% end %>
+
+</div>

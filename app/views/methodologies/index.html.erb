@@ -1,0 +1,46 @@
+<%= render "shared/loader" %>
+
+<%- model_class = Methodology -%>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h5 class="breadcrumbs-title">Metodologias</h5>
+    <ol class="breadcrumbs">
+        <li>Cadastros</li>
+        <li class="active">Metodologias</li>
+    </ol>
+  </div>
+</div>
+<br>
+<div class="card-panel">
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width: 2%">ID</th>
+        <th style="width: 18%">Descrição</th>
+        <th style="width: 50%">Descrição Completa</th>
+        <th style="width: 15%">Criado em</th>
+        <th style="width: 15%; text-align: center">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @methodologies.each do |methodology| %>
+        <tr>
+          <td><%= link_to methodology.id, methodology_path(methodology) %></td>
+          <td><%= methodology.description %></td>
+          <td><%= methodology.long_description %></td>
+          <td><%=l methodology.created_at, format: :short %></td>
+          <td style="text-align: center">
+            <%=link_to "<i class='material-icons'>delete</i>".html_safe, methodology_path(methodology), method: :delete, class: "waves-effect waves-circle btn-floating secondary-content" %>
+            <%=link_to "<i class='material-icons'>edit</i>".html_safe, edit_methodology_path(methodology), class: "waves-effect waves-circle btn-floating secondary-content cyan" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_methodology_path,
+              :class => 'waves-effect waves-light btn' %>
+
+</div>

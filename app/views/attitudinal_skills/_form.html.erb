@@ -1,0 +1,45 @@
+<div class="card-panel">
+
+  <%= form_for @attitudinal_skill, :html => { :class => "form-horizontal attitudinal_skill" } do |f| %>
+
+    <% if @attitudinal_skill.errors.any? %>
+      <div class="col-lg-offset-2 col-lg-10">
+        <div id="error_expl" class="panel panel-danger" style="margin-bottom: 50px">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= pluralize(@attitudinal_skill.errors.count, "erro") %> impedem a competência atitudinal de ser salva:</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+            <% @attitudinal_skill.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :tipo %>
+        <%= f.text_field :tipo %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :Description %>
+        <%= f.text_area :Description, cols: 5, rows: 10, :class => 'materialize-textarea' %>
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <%= f.submit nil, :class => 'waves-effect waves-light btn cyan' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                attitudinal_skills_path, :class => 'waves-effect waves-light btn' %>
+    </div>
+
+  <% end %>
+
+</div>

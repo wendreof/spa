@@ -1,0 +1,39 @@
+<%- model_class = ActivitySugestion -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => 'Sugestão de Atividades' %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+       <th style="width: 5%">ID</th>
+      <th style="width: 65%">Descrição</th>
+      <th style="width: 15%">Criado em</th>
+      <th style="width: 15%">Ações</th>
+
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @activity_sugestions.each do |activity_sugestion| %>
+      <tr>
+        <td><%= link_to activity_sugestion.id, activity_sugestion_path(activity_sugestion) %></td>
+        <td><%= activity_sugestion.description %></td>
+        <td><%=l activity_sugestion.created_at, format: :short%></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_activity_sugestion_path(activity_sugestion), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      activity_sugestion_path(activity_sugestion),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Você tem certeza?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_activity_sugestion_path,
+            :class => 'btn btn-primary' %>

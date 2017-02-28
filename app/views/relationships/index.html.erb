@@ -1,0 +1,50 @@
+<%= render "shared/loader" %>
+
+<%- model_class = Relationship -%>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h5 class="breadcrumbs-title">Relacionamentos</h5>
+    <ol class="breadcrumbs">
+        <li>Cadastros</li>
+        <li class="active">Relacionamentos</li>
+    </ol>
+  </div>
+</div>
+<br>
+<div class="card-panel">
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width: 2%">ID</th>
+        <th style="width: 17%">Comp. Atitudinais</th>
+        <th style="width: 21%">Comp. Específicas</th>
+        <th style="width: 13%">Domínio Cognitivo</th>
+        <th style="width: 17%">Atividades</th>
+        <th style="width: 15%">Criado em</th>
+        <th style="width: 15%; text-align: center">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @relationships.each do |relationship| %>
+        <tr>
+          <td><%= link_to relationship.id, relationship_path(relationship) %></td>
+          <td><%= relationship.attitudinal_skill.tipo %></td>
+          <td><%= relationship.specific_skill.description %></td>
+          <td><%= relationship.category.desctipion %></td>
+          <td><%= relationship.activity.description %></td>
+          <td><%=l relationship.created_at, format: :short %></td>
+          <td style="text-align: center">
+            <%=link_to "<i class='material-icons'>delete</i>".html_safe, relationship_path(relationship), method: :delete, class: "waves-effect waves-circle btn-floating secondary-content" %>
+            <%=link_to "<i class='material-icons'>edit</i>".html_safe, edit_relationship_path(relationship), class: "waves-effect waves-circle btn-floating secondary-content cyan" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_relationship_path,
+              :class => 'waves-effect waves-light btn' %>
+
+</div>

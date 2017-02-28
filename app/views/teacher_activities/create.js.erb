@@ -1,0 +1,8 @@
+ $('#modal-add-activity').closeModal();
+
+ attitudinalSkillIds = $('#meeting_attitudinal_skill_ids').val();
+ specificSkillId = $('#meeting_specific_skill_id').val();
+ categoryId = $('#meeting_category_id').val();
+ loadTeacherActivities(specificSkillId, attitudinalSkillIds, categoryId);
+
+ $('#new_activity').find("input[type=text]").val("");

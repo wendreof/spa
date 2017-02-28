@@ -1,0 +1,139 @@
+<%= render "shared/loader" %>
+
+<div class="card-panel">
+
+  <%= form_for @meeting, :html => { :class => "form-horizontal meeting" } do |f| %>
+
+    <% if @meeting.errors.any? %>
+      <div id="error_expl" class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= pluralize(@meeting.errors.count, "error") %> impedem o encontro de ser salvo:</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+          <% @meeting.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s8">
+        <%= f.label :name %>
+        <%= f.text_field :name%>
+      </div>
+      <div class="input-field col s4">
+        <%= f.label :workload %>
+        <%= f.text_field :workload%>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s11">
+        <%= f.collection_select :generating_theme_id, @generating_themes, :id, :description, {:prompt => '<option value="" disabled selected>Selecione um tema</option>
+  '.html_safe, :selected => @meeting.generating_theme_id} %>
+        <%= f.label :generating_theme_id %>
+      </div>
+      <div class="input-field col s1">
+        <button type="button" class="btn waves-effect waves-light modal-trigger" href="#modal-add-theme">+</button>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select :specific_skill_id, SpecificSkill.all.order(:description), :id, :description, {:prompt => '<option value="" disabled selected>Selecione as competências específicas</option>'.html_safe, :selected => @meeting.specific_skill_id} %>
+        <%= f.label :specific_skill_id %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select(:attitudinal_skill_ids, AttitudinalSkill.all, :id, :tipo,
+                                {include_blank: false, :include_hidden => false, :prompt => '<option value="" disabled selected>Selecione as competências atitudinais</option>'.html_safe, :selected => @meeting.attitudinal_skills.map(&:id)},
+                                {:multiple => true}) %>
+        <%= f.label :attitudinal_skill_ids %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <%= f.collection_select :category_id, Category.all.order(:desctipion), :id, :desctipion, {:prompt => '<option value="" disabled selected>Selecione um domínio cognitivo</option>'.html_safe, :selected => @meeting.category_id}%>
+        <%= f.label :category_id %>
+      </div>
+      <div class="input-field col s6">
+        <%= f.collection_select(:verb_ids, @verbs, :id, :description,
+                                {include_blank: false, :include_hidden => false, :prompt => '<option value="" disabled selected>Selecione os verbos</option>'.html_safe, :selected => @meeting.verbs.map(&:id)},
+                                {:multiple => true}) %>
+        <%= f.label :verb_ids %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <%= f.collection_select(:methodology_ids, Methodology.all.order(:description), :id, :description,
+                                {include_blank: false, :include_hidden => false, :prompt => '<option value="" disabled selected>Selecione as metodologias</option>'.html_safe, :selected => @meeting.methodologies.map(&:id)},
+                                {:multiple => true}) %>
+        <%= f.label :methodology_ids %>
+      </div>
+      <div class="input-field col s5">
+        <%= f.collection_select(:activity_ids, @activities, :id, :description,
+                                {include_blank: false, :include_hidden => false, :prompt => '<option value="" disabled selected>Selecione as atividades</option>'.html_safe, :selected => @meeting.activities.map(&:id)},
+                                {:multiple => true}) %>
+        <%= f.label :activity_ids %>
+      </div>
+      <div class="input-field col s1">
+        <button type="button" class="btn waves-effect waves-light modal-trigger" href="#modal-add-activity">+</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <%= f.collection_select(:strategy_ids, @strategies, :id, :description,
+                                {include_blank: false, :include_hidden => false, :prompt => '<option value="" disabled selected>Selecione as estratégias</option>'.html_safe, :selected => @meeting.strategies.map(&:id)},
+                                {:multiple => true}) %>
+        <%= f.label :strategy_ids %>
+      </div>
+      <div class="input-field col s6">
+        <%= f.collection_select(:resource_ids, Resource.all.order(:description), :id, :description,
+                                {include_blank: false, :include_hidden => false, :prompt => '<option value="" disabled selected>Selecione os recursos</option>'.html_safe, :selected => @meeting.resources.map(&:id)},
+                                {:multiple => true}) %>
+        <%= f.label :resource_ids %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select(:evidence_ids, @evidences, :id, :description,
+                                {include_blank: false, :include_hidden => false, :prompt => '<option value="" disabled selected>Selecione as evidências</option>'.html_safe, :selected => @meeting.evidences.map(&:id)},
+                                {:multiple => true}) %>
+        <%= f.label :evidence_ids %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :know_more %>
+        <%= f.text_area :know_more, cols: 10, rows: 3, :class => 'materialize-textarea' %>
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <div class="col-md-6 col-md-offset-5">
+        <%= f.submit "Salvar", :class => 'btn btn-primary' %>
+        <%= f.hidden_field :plane_classroom_id, value: @meeting.plane_classroom_id %>
+        <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  "/plane_classrooms/#{@meeting.plane_classroom_id}/edit?active=meetings", :class => 'btn btn-default' %>
+      </div>
+    </div>
+
+  <% end %>
+
+</div>
+
+
+<%= render "teacher_generating_themes/new" %>
+<%= render "teacher_activities/new" %>

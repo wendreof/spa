@@ -1,0 +1,19 @@
+version: '2'
+services:
+  web:
+    build: .
+    container_name: spa
+    restart: always
+    volumes:
+      - .:/spa
+    environment:
+      - "TZ=America/Sao_Paulo"
+    ports:
+      - "3006:3000"
+#    networks:
+#      rede_interna:
+#        ipv4_address: 192.168.0.9
+
+#networks:
+#  rede_interna:
+#    external: true

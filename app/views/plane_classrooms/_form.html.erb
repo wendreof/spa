@@ -1,0 +1,109 @@
+<div class="card-panel">
+
+  <%= form_for @plane_classroom, :html => { :class => "form-horizontal plane_classroom" } do |f| %>
+
+  <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s3"><a <%= "class=active" if params[:active] == "basic-data" || params[:active].nil?%> href="#basic-data">Dados Básicos</a></li>
+          <li class="tab col s3"><a <%= "class=active" if params[:active] == "meetings" %> href="#meetings">Encontros</a></li>
+        </ul>
+      </div>
+      <div id="basic-data" class="col s12">
+        <div style="margin-top: 30px"></div>
+        <div class="form-group">
+          <%= f.label :teacher_id, :class => 'control-label col-lg-2' %>
+          <div class="col-lg-4">
+            <%= text_field_tag "name", @teacher.name, :class => 'form-control', disabled: true %>
+            <%= f.hidden_field :teacher_id, value: @teacher.id %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <div class="col l4">
+              <%= f.label :year, :class => 'control-label col-lg-2' %>
+              <%= f.text_field :year, :class => 'form-control' %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col l4">
+              <%= f.label :semester, :class => 'control-label col-lg-2' %>
+              <%= f.select :semester, "<option>Selecione</option><option value='Primeiro'>Primeiro</option><option value='Segundo'>Segundo</option>".html_safe, {}, {class: 'form-control'} %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col l4">
+              <%= f.label :workload, :class => 'control-label col-lg-2' %>
+              <%= f.text_field :workload, :class => 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :course_id, :class => 'control-label col-lg-2' %>
+          <div class="col-lg-10">
+            <%= f.collection_select :course_id, Course.all, :id, :description, {:prompt => 'Selecione um curso', :selected => @plane_classroom.course_id}, {:class => 'form-control'} %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :course_module_id, :class => 'control-label col-lg-2' %>
+          <div class="col-lg-10">
+           <%= f.collection_select :course_module_id, @course_modules, :id, :description, {:prompt => 'Selecione um módulo', :selected => @plane_classroom.course_module_id}, {:class => 'form-control'} %>
+         </div>
+         </div>
+         <div class="form-group">
+          <%= f.label :study_unit_id, :class => 'control-label col-lg-2' %>
+          <div class="col-lg-10">
+            <%= f.collection_select :study_unit_id, StudyUnit.all, :id, :description, {:prompt => 'Selecione uma unidade', :selected => @plane_classroom.study_unit_id}, {:class => 'form-control'} %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :menu, :class => 'control-label col-lg-2' %>
+          <div class="col-lg-10">
+            <%= f.text_area :menu, cols: 5, rows: 5, :class => 'form-control materialize-textarea' %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :interdisciplinary_project, :class => 'control-label col-lg-2' %>
+          <div class="col-lg-10">
+            <%= f.text_area :interdisciplinary_project, cols: 5, rows: 5, :class => 'form-control materialize-textarea' %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :basic_bibliography, :class => 'control-label col-lg-2' %>
+          <div class="col-lg-10">
+            <%= f.text_area :basic_bibliography, cols: 5, rows: 5, :class => 'form-control materialize-textarea' %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :additional_bibliography, :class => 'control-label col-lg-2' %>
+          <div class="col-lg-10">
+            <%= f.text_area :additional_bibliography, cols: 5, rows: 5, :class => 'form-control materialize-textarea' %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10">
+            <%= f.submit "Salvar", :class => 'btn btn-primary' %>
+            <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            plane_classrooms_path, :class => 'btn btn-default' %>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="meetings" class="col s12">
+        <br><br>
+        <% unless @plane_classroom.new_record? %>
+          <%= render :partial => 'meetings', locals: {plane_classroom: @plane_classroom} %>
+        <% end %>
+      </div>
+
+    </div>
+
+  <% end %>
+
+</div>

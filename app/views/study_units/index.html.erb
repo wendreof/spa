@@ -1,0 +1,46 @@
+<%= render "shared/loader" %>
+
+<%- model_class = StudyUnit -%>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h5 class="breadcrumbs-title">Unidades de Estudo</h5>
+    <ol class="breadcrumbs">
+        <li>Cadastros</li>
+        <li class="active">Unidades de Estudo</li>
+    </ol>
+  </div>
+</div>
+<br>
+<div class="card-panel">
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width: 2%">ID</th>
+        <th style="width: 53%">Descrição</th>
+        <th style="width: 15%">Módulo</th>
+        <th style="width: 15%">Criado em</th>
+        <th style="width: 15%; text-align: center">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @study_units.each do |study_unit| %>
+        <tr>
+          <td><%= link_to study_unit.id, study_unit_path(study_unit) %></td>
+          <td><%= study_unit.description %></td>
+          <td><%= study_unit.course_module_id %></td>
+          <td><%=l study_unit.created_at, format: :short %></td>
+          <td style="text-align: center">
+            <%=link_to "<i class='material-icons'>delete</i>".html_safe, study_unit_path(study_unit), method: :delete, class: "waves-effect waves-circle btn-floating secondary-content" %>
+            <%=link_to "<i class='material-icons'>edit</i>".html_safe, edit_study_unit_path(study_unit), class: "waves-effect waves-circle btn-floating secondary-content cyan" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_study_unit_path,
+              :class => 'waves-effect waves-light btn' %>
+
+</div>

@@ -1,0 +1,35 @@
+<div class="card-panel">
+
+  <%= form_for @resource, :html => { :class => "form-horizontal resource" } do |f| %>
+
+    <% if @resource.errors.any? %>
+      <div id="error_expl" class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= pluralize(@resource.errors.count, "error") %> impedem o recurso de ser salvo:</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+          <% @resource.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :description %>
+        <%= f.text_field :description%>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <%= f.submit nil, :class => 'waves-effect waves-light btn cyan' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                resources_path, :class => 'waves-effect waves-light btn' %>
+    </div>
+
+  <% end %>
+
+</div>

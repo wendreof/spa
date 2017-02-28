@@ -1,0 +1,20 @@
+<div class="modal modal-add-theme" id="modal-add-theme">
+      <div class="modal-content">
+        <%= form_for(GeneratingTheme.new, url: teacher_generating_themes_path(GeneratingTheme.new), remote: true, :html => { :class => "form-horizontal" }) do |f| %>
+
+          <h4 class="modal-title">Novo Tema Gerador</h4>
+          <div class="form-group">
+            <%= f.label :description, :class => 'control-label col-lg-2' %>
+            <div class="col-lg-10">
+              <%= f.text_field :description, :class => 'form-control' %>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="modal-action modal-close btn waves-effect waves-light" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn waves-effect waves-light cyan">Salvar</button>
+          </div>
+        <% end %>
+      </div>
+  </>
+</div>

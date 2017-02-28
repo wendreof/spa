@@ -1,0 +1,7 @@
+<%- model_class = CourseModule -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'Novo %{model}'], :model =>'Módulo do Curso' %></h1>
+</div>
+<h5>Insira o Curso e seu respectivo Módulo. </h5>
+<br>
+<%= render :partial => 'form' %>

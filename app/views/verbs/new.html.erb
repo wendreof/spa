@@ -1,0 +1,13 @@
+<%- model_class = Verb -%>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h5 class="breadcrumbs-title">Verbos</h5>
+    <ol class="breadcrumbs">
+        <li>Cadastros</li>
+        <li> <a href="<%= verbs_path %>">Verbos</a></li>
+        <li class="active">Novo</li>
+    </ol>
+  </div>
+</div>
+<br>
+<%= render :partial => 'form' %>

@@ -1,0 +1,17 @@
+<%= form_for(@teacher_activity) do |f| %>
+  <% if @teacher_activity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@teacher_activity.errors.count, "error") %> prohibited this teacher_activity from being saved:</h2>
+
+      <ul>
+      <% @teacher_activity.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

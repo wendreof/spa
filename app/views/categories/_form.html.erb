@@ -1,0 +1,48 @@
+<div class="card-panel">
+
+  <%= form_for @category, :html => { :class => "form-horizontal category" } do |f| %>
+
+    <% if @category.errors.any? %>
+      <div class="col-lg-offset-2 col-lg-10">
+        <div id="error_expl" class="panel panel-danger" style="margin-bottom: 50px">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= pluralize(@category.errors.count, "erro") %> impedem o domínio cognitivo de ser salvo:</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+            <% @category.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :description %>
+        <%= f.text_field :desctipion %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :long_description %>
+        <%= f.text_area :long_description, cols: 5, rows: 10, :class => 'materialize-textarea' %>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <%= f.submit nil, :class => 'waves-effect waves-light btn cyan' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                categories_path, :class => 'waves-effect waves-light btn' %>
+    </div>
+
+
+
+  <% end %>
+
+</div>

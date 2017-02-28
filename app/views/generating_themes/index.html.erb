@@ -1,0 +1,46 @@
+<%= render "shared/loader" %>
+
+<%- model_class = GeneratingTheme -%>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h5 class="breadcrumbs-title">Temas Geradores</h5>
+    <ol class="breadcrumbs">
+        <li>Cadastros</li>
+        <li class="active">Temas Geradores</li>
+    </ol>
+  </div>
+</div>
+<br>
+<div class="card-panel">
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width: 2%">ID</th>
+        <th style="width: 25%">Descrição</th>
+        <th style="width: 43%">Descrição Completa</th>
+        <th style="width: 15%">Criado em</th>
+        <th style="width: 14%; text-align: center">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @generating_themes.each do |generating_theme| %>
+        <tr>
+          <td><%= link_to generating_theme.id, generating_theme_path(generating_theme) %></td>
+          <td><%= generating_theme.description %></td>
+          <td><%= generating_theme.long_description %></td>
+          <td><%=l generating_theme.created_at, format: :short %></td>
+          <td style="text-align: center">
+            <%=link_to "<i class='material-icons'>delete</i>".html_safe, generating_theme_path(generating_theme), method: :delete, class: "waves-effect waves-circle btn-floating secondary-content" %>
+            <%=link_to "<i class='material-icons'>edit</i>".html_safe, edit_generating_theme_path(generating_theme), class: "waves-effect waves-circle btn-floating secondary-content cyan" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_generating_theme_path,
+              :class => 'waves-effect waves-light btn' %>
+
+</div>

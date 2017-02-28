@@ -1,0 +1,8 @@
+<div class="row nested-fields">
+  <div class="input-field col s4">
+    <%= f.text_field :description, :class => 'form-control' %>
+  </div>
+  <div class="input-field col s2">
+    <%= link_to_remove_association '<i class="material-icons">remove</i>'.html_safe, f, :class => "btn-floating" %>
+  </div>
+</div>

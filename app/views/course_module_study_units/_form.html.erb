@@ -1,0 +1,40 @@
+<div class="card-panel">
+
+  <%= form_for(@course_module_study_unit) do |f| %>
+    <% if @course_module_study_unit.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@course_module_study_unit.errors.count, "error") %> prohibited this course_module_study_unit from being saved:</h2>
+
+        <ul>
+        <% @course_module_study_unit.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select :course_module_id, CourseModule.joins(:course).all.order("courses.description, course_modules.description"), :id, :name_with_course, {:prompt => 'Selecione um Módulo', :selected => @course_module_study_unit.course_module_id} %>
+        <%= f.label :course_module_id %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select :study_unit_id, StudyUnit.all.order(:description), :id, :description, {:prompt => 'Selecione uma Unidade de Estudo', :selected => @course_module_study_unit.study_unit_id} %>
+        <%= f.label :study_unit_id %>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <%= f.submit nil, :class => 'waves-effect waves-light btn cyan' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                course_module_study_units_path, :class => 'waves-effect waves-light btn' %>
+    </div>
+
+  <% end %>
+
+</div>

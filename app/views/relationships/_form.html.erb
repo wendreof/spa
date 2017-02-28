@@ -1,0 +1,56 @@
+<div class="card-panel">
+
+  <%= form_for @relationship, :html => { :class => "form-horizontal relationship" } do |f| %>
+
+    <% if @relationship.errors.any? %>
+      <div id="error_expl" class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= pluralize(@relationship.errors.count, "error") %> impedem o relacionamento de ser salvo:</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+          <% @relationship.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select :attitudinal_skill_id, AttitudinalSkill.all, :id, :tipo, {:prompt => 'Selecione uma competência atitudinal', :selected => @relationship.attitudinal_skill_id}, {:class => 'form-control'} %>
+        <%= f.label :attitudinal_skill_id %>
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+        <%= f.collection_select :specific_skill_id, SpecificSkill.all, :id, :description, {:prompt => 'Selecione uma competência específica', :selected => @relationship.specific_skill_id}, {:class => 'form-control'} %>
+        <%= f.label :specific_skill_id %>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select :category_id, Category.all, :id, :desctipion, {:prompt => 'Selecione um domínio cognitivo', :selected => @relationship.category_id}, {:class => 'form-control'} %>
+        <%= f.label :category_id %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.collection_select :activity_id, Activity.all, :id, :description, {:prompt => 'Selecione uma atividade', :selected => @relationship.activity_id}, {:class => 'form-control'} %>
+      <%= f.label :activity_id %>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+      <%= f.submit nil, :class => 'waves-effect waves-light btn cyan' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                relationships_path, :class => 'waves-effect waves-light btn' %>
+    </div>
+
+  <% end %>
+
+</div>

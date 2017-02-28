@@ -1,0 +1,36 @@
+<div class="row">
+
+  <% @plane_classroom.meetings.each do |meeting| %>
+
+    <div class="col s12 m4">
+      <div class="card grey lighten-4">
+        <div class="card-content">
+          <span class="card-title"><%= meeting.name %></span>
+          <p><%= meeting.workload %></p>
+        </div>
+        <div class="card-action" style="padding-top: 5px">
+          <a class="waves-effect waves-circle btn-floating secondary-content" data-method="delete" data-confirm="Você tem certeza?" href="<%= meeting_path(meeting) %>">
+            <i class='material-icons'>delete</i>
+          </a>
+          <a class="waves-effect waves-circle btn-floating secondary-content cyan" href="<%= edit_plane_classroom_meeting_path(@plane_classroom, meeting) %>">
+            <i class='material-icons'>edit</i>
+          </a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
+
+</div>
+
+<br><br>
+
+<div class="row">
+  <div class="col-lg-offset-0  col-lg-10">
+    <%= link_to t('.new', :default => t("helpers.links.new")),
+    new_plane_classroom_meeting_path(@plane_classroom), :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+    plane_classrooms_path, :class => 'btn btn-default' %>
+  </div>
+</div>

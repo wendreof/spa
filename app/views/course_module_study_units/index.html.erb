@@ -1,0 +1,51 @@
+<%= render "shared/loader" %>
+
+<%- model_class = Teacher -%>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h5 class="breadcrumbs-title">Unidades de Estudo dos Módulos</h5>
+    <ol class="breadcrumbs">
+        <li>Cadastros</li>
+        <li class="active">Unidades de Estudo dos Módulos</li>
+    </ol>
+  </div>
+</div>
+<br>
+<div class="card-panel">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width: 2%">ID</th>
+        <th style="width: 33%">Curso</th>
+        <th style="width: 15%">Módulo</th>
+        <th style="width: 25%">Un. Estudo</th>
+        <th style="width: 15%">Criado em</th>
+        <th style="width: 10%; text-align: center">Ações</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @course_module_study_units.each do |course_module_study_unit| %>
+      <tr>
+        <td><%= link_to course_module_study_unit.id, course_module_study_unit_path(course_module_study_unit) %></td>
+        <td><%= course_module_study_unit.course_module.course.description %></td>
+        <td><%= course_module_study_unit.course_module.description %></td>
+        <td><%= course_module_study_unit.study_unit.description %></td>
+        <td><%=l course_module_study_unit.created_at, format: :short %></td>
+        <td style="text-align: center">
+          <%=link_to "<i class='material-icons'>delete</i>".html_safe, course_module_study_unit_path(course_module_study_unit), method: :delete, class: "waves-effect waves-circle btn-floating secondary-content" %>
+          <%=link_to "<i class='material-icons'>edit</i>".html_safe, edit_course_module_study_unit_path(course_module_study_unit), class: "waves-effect waves-circle btn-floating secondary-content cyan" %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_course_module_study_unit_path,
+              :class => 'waves-effect waves-light btn' %>
+
+</div>
